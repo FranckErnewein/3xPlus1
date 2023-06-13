@@ -8,7 +8,7 @@ threeXPlusOne x
 
 seq3xp1 :: Int -> [Int]
 seq3xp1 1 = [] 
-seq3xp1 x = (threeXPlusOne x):(seq3xp1 (threeXPlusOne x))
+seq3xp1 x =  x : seq3xp1 (threeXPlusOne x)
 
 main :: IO ()
 main = do
