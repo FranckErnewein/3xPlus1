@@ -8,7 +8,7 @@ threeXPlusOne x
   | otherwise = (3 * x) + 1
 
 seq3xp1 :: Int -> [Int]
-seq3xp1 1 = [] 
+seq3xp1 1 = [1]
 seq3xp1 x =  x : seq3xp1 (threeXPlusOne x)
 
 main :: IO ()
